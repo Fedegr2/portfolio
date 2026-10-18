@@ -629,7 +629,7 @@ section {
 .glass-pill.short { width: 65%; }
 .glass-pill.wide { flex: 1; border-radius: 14px; }
 
-/* Tussi & Burguers mockup */
+/* Tussi & Burguers game art */
 .mockup-tussi {
   background: radial-gradient(circle at 50% 35%, #793c24 0, #301b17 48%, #160f10 100%);
   align-items: center;
@@ -638,8 +638,14 @@ section {
   text-align: center;
 }
 
-.tussi-symbol { font-size: clamp(3.5rem, 8vw, 5.5rem); line-height: 1; }
+.tussi-symbol {
+  color: #ffc28d;
+  font: 800 clamp(3.5rem, 8vw, 6rem)/1 var(--font-main);
+  letter-spacing: -0.12em;
+  text-shadow: 0 8px 0 #5f2c1b, 0 22px 35px rgba(0,0,0,0.45);
+}
 .tussi-name { font-size: clamp(1.2rem, 3vw, 1.8rem); font-weight: 800; letter-spacing: -1px; }
+.tussi-subtitle { color: #e9c4a6; font: 0.68rem var(--font-mono); letter-spacing: 1.4px; text-transform: uppercase; }
 .tussi-status {
   border: 1px solid rgba(255, 143, 94, 0.55);
   border-radius: 100px;
@@ -1287,21 +1293,27 @@ footer { padding: 2rem clamp(1.25rem, 5vw, 6rem); color: #a89b90; }
       </div>
     </div>
 
-    <!-- Tussi & Burguers -->
+    <!-- Tussi & Burguers (antes Fast Empire) -->
     <div class="project-card reveal">
       <div class="project-visual">
         <div class="project-mockup mockup-tussi" aria-hidden="true">
-          <div class="tussi-symbol">🍔</div>
+          <div class="tussi-symbol">T&amp;B</div>
           <div class="tussi-name">Tussi &amp; Burguers</div>
+          <div class="tussi-subtitle">Juego de gestión y acción · 3D</div>
           <div class="tussi-status">En desarrollo</div>
         </div>
       </div>
       <div class="project-info">
-        <div class="project-tag">En desarrollo</div>
+        <div class="project-tag">Videojuego · En desarrollo</div>
         <h3 class="project-name">Tussi &amp; Burguers</h3>
         <p class="project-desc">
-          Estoy desarrollando Tussi &amp; Burguers. Pronto voy a compartir más detalles sobre el proyecto.
+          La evolución 3D de Fast Empire: un juego de gestión y acción en el que un local de comidas crece hasta convertirse en un imperio. Tiene economía, personajes, vehículos y juego cooperativo por LAN.
         </p>
+        <div class="project-tech">
+          <span class="tech-tag">Godot 4</span>
+          <span class="tech-tag">GDScript</span>
+          <span class="tech-tag">Tiled</span>
+        </div>
       </div>
     </div>
 
